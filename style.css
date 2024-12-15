@@ -1,0 +1,75 @@
+body {
+  font-family: "pretendard", sans-serif;
+}
+header {
+  height: 110px;
+}
+section {
+  height: 800px;
+}
+footer {
+  height: 80px;
+}
+
+/* search */
+.search-form {
+  width: 80%;
+}
+.search-bar {
+  height: 40px;
+  width: 100%;
+  border: 2px solid;
+  border-color: black;
+  padding-left: 10px;
+  border-radius: 15px;
+}
+.div-i {
+  width: 36px;
+}
+.search-input {
+  height: 35px;
+  width: 100%;
+  padding-left: 10px;
+  border: none;
+  border-radius: 13px;
+  background-color: transparent;
+  padding-left: -10px;
+  &:focus {
+    outline: none;
+    background-color: transparent;
+  }
+}
+
+/* 로그인, 회원가입 */
+.sign {
+  font-family: "pretendard", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.sign > ul {
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+.sign a {
+  color: black;
+}
+
+/* 메뉴 */
+.menu {
+  background-color: #a2d7ff;
+}
+.menu ul {
+  width: 70%;
+}
+.menu ul li a {
+  color: black;
+}
+.menu ul li a:hover {
+  background-color: #7bc2f8;
+}
+
+/* 메인 */
+.main .banner-img > img {
+  background-color: #aff;
+  height: 400px;
+}

@@ -71,5 +71,31 @@ footer {
 /* 메인 */
 .main .banner-img > img {
   background-color: #aff;
-  height: 400px;
+  width: 600px;
+}
+.main .banner {
+  position: relative;
+}
+.main .banner-img {
+  position: absolute;
+}
+#bannerImg1,
+#bannerImg3 {
+  width: 500px;
+}
+.main .banner-img:nth-child(1) {
+  top: 50px;
+  left: 0;
+  opacity: 0.8;
+}
+.main .banner-img:nth-child(2) {
+  top: 120px;
+  left: 50%;
+  margin-left: -300px;
+  z-index: 1;
+}
+.main .banner-img:nth-child(3) {
+  top: 50px;
+  right: 0;
+  opacity: 0.8;
 }

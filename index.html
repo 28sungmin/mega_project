@@ -23,10 +23,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- fontawesome -->
-    <script
-      src="https://kit.fontawesome.com/694d84122c.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/694d84122c.js" crossorigin="anonymous"></script>
     <!-- pretendard 폰트 -->
     <link
       rel="stylesheet"
@@ -37,85 +34,132 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wrap bg-secondary">
+    <div class="wrap">
       <!-- header -->
-      <header class="d-flex">
+      <header class="d-flex bg-white">
         <!-- logo -->
-        <div
-          class="logo col-3 d-flex align-items-center justify-content-center"
-        >
+        <div class="logo col-2 d-flex align-items-center justify-content-center bg-white">
           <a href="index.html">
-            <img src="image/logo_big.png" alt="로고 이미지" height="100" />
+            <img src="/image/logo2.png" alt="로고 이미지" height="100" />
           </a>
         </div>
-        <!-- search -->
-        <div
-          class="search col-6 d-flex align-items-center justify-content-center"
-        >
-          <form action="" method="get" class="search-form">
-            <div class="search-bar d-flex">
+        <!-- 메뉴 -->
+        <nav class="menu d-flex justify-content-center align-items-center bg-white col-7">
+          <ul class="nav nav-fill">
+            <li class="nav-item">
+              <a href="#" class="nav-link">카테고리</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">달력</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">공지사항</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">마이페이지</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- 로그인, 회원가입 -->
+        <div class="sign-search bg-white d-flex col-3 align-items-center justify-content-center">
+          <div class="sign">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link">로그인</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">회원가입</a>
+              </li>
+            </ul>
+          </div>
+          <!-- search -->
+          <div class="search d-flex align-items-center">
+            <div class="search-all d-none">
+              <div class="d-flex align-items-center justify-content-center">
+                <form action="" method="get" class="search-form">
+                  <div class="search-bar d-flex">
+                    <button
+                      type="submit"
+                      class="div-i d-flex align-items-center justify-content-center btn"
+                    >
+                      <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                    </button>
+                    <input type="text" name="search" class="search-input" autocomplete="off" />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="search-btn">
               <button
                 type="submit"
                 class="div-i d-flex align-items-center justify-content-center btn"
               >
                 <i class="fa-solid fa-magnifying-glass fa-xl"></i>
               </button>
-              <input
-                type="text"
-                name="search"
-                class="search-input"
-                autocomplete="off"
-              />
             </div>
-          </form>
-        </div>
-        <!-- 로그인, 회원가입 -->
-        <div class="sign col-3 d-flex align-items-end">
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="#" class="nav-link">로그인</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">회원가입</a>
-            </li>
-          </ul>
+            <div class="search-x d-none">
+              <button
+                type="submit"
+                class="div-x d-flex align-items-center justify-content-center btn"
+              >
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </header>
-      <!-- 메뉴 -->
-      <nav class="menu d-flex justify-content-center">
-        <ul class="nav nav-fill">
-          <li class="nav-item">
-            <a href="#" class="nav-link">홈</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">카테고리</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">달력</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">공지사항</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">마이페이지</a>
-          </li>
-        </ul>
-      </nav>
       <!-- 메인 -->
-      <section class="main bg-warning">
-        <div class="banner">
-          <div class="banner-img banner1">
-            <img src="image/main1.jpg" alt="배너 이미지" id="bannerImg1" />
-          </div>
-          <div class="banner-img banner2">
-            <img src="image/main2.jpg" alt="배너 이미지" id="bannerImg2" />
-          </div>
-          <div class="banner-img banner3">
-            <img src="image/main3.jpg" alt="배너 이미지" id="bannerImg3" />
+      <section class="main">
+        <div class="main-banner">
+          <video class="bg-video" autoplay muted loop>
+            <source src="/image/banner1.mp4" type="video/mp4" />
+          </video>
+          <div class="main-text"></div>
+        </div>
+        <div class="merit">
+          <h1 class="text-center mt-5 mb-4">
+            Dream
+            <span class="merit-span">Link</span>
+            의 장점
+          </h1>
+          <div class="merit-divs d-flex justify-content-around">
+            <a href="">
+              <div id="merit1" class="merit-div">
+                <h4 class="text-center d-flex align-items-center justify-content-center">
+                  <span>카테고리</span>
+                  별 복지 정책 분류
+                </h4>
+                <div class="merit-img"></div>
+              </div>
+            </a>
+            <a href="">
+              <div id="merit2" class="merit-div">
+                <h4 class="text-center d-flex align-items-center justify-content-center">
+                  <span>달력</span>
+                  에 일정 표시 가능
+                </h4>
+                <div class="merit-img"></div>
+              </div>
+            </a>
+            <a href="">
+              <div id="merit3" class="merit-div">
+                <h4 class="text-center d-flex align-items-center justify-content-center">
+                  <span>위치 기반&nbsp;</span>
+                  복지 정책 확인
+                </h4>
+                <div class="merit-img"></div>
+              </div>
+            </a>
           </div>
         </div>
       </section>
-      <footer class="bg-success"></footer>
+      <hr />
+      <footer class="text-secondary bg-white">
+        <small>
+          <div>서울특별시 복지정책과 운영 | © 2024 서울특별시. All rights reserved.</div>
+          <div>문의: 02-123-4567 / welfare@seoul.go.kr</div>
+        </small>
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>
